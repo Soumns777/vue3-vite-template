@@ -1,5 +1,9 @@
 <script setup>
 import HelloWorld from '/@/components/HelloWorld.vue'
+import {getSuiJiJokes} from '/@/services/jokes/index.js'
+
+const {result: res} = await getSuiJiJokes()
+console.log(res)
 </script>
 
 <template>
